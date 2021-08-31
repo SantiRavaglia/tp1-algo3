@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/tp1Algo3.dir/main.cpp.o CMakeFiles/tp1Algo3.dir/brute_force.cpp.o  -o tp1Algo3.exe -Wl,--out-implib,libtp1Algo3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
