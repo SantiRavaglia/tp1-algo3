@@ -1,11 +1,11 @@
-#ifndef TP1ALGO3_BRUTE_FORCE_H
-#define TP1ALGO3_BRUTE_FORCE_H
-
 #include <vector>
-#include <tuple>
 
 using namespace std;
 
-int calculoBeneficioBF(vector<int> beneficios, vector<int> contagios);
+pair<int, int> sigma(vector<pair<int, pair<int, int>>> subconjunto);
 
-#endif //TP1ALGO3_BRUTE_FORCE_H
+void recParts(vector<pair<int, pair<int, int>>>& locales, vector<vector<pair<int, pair<int, int>>> >& res, vector<pair<int, pair<int, int>>>& subset, int index);
+
+vector<vector<pair<int, pair<int, int>>>> parts(vector<pair<int, pair<int, int>>>& locales);
+
+int calculoBeneficioBF(vector<pair<int, pair<int, int>>> locales, int M);

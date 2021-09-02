@@ -63,10 +63,10 @@ RM = /cygdrive/c/Users/santi/AppData/Local/JetBrains/CLion2020.3/cygwin_cmake/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/santi/Desktop/tp1Algo3
+CMAKE_SOURCE_DIR = "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/santi/Desktop/tp1Algo3/cmake-build-debug
+CMAKE_BINARY_DIR = "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tp1Algo3.dir/depend.make
@@ -79,29 +79,29 @@ include CMakeFiles/tp1Algo3.dir/flags.make
 
 CMakeFiles/tp1Algo3.dir/main.cpp.o: CMakeFiles/tp1Algo3.dir/flags.make
 CMakeFiles/tp1Algo3.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/santi/Desktop/tp1Algo3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tp1Algo3.dir/main.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tp1Algo3.dir/main.cpp.o -c /cygdrive/c/Users/santi/Desktop/tp1Algo3/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tp1Algo3.dir/main.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tp1Algo3.dir/main.cpp.o -c "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/main.cpp"
 
 CMakeFiles/tp1Algo3.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tp1Algo3.dir/main.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/santi/Desktop/tp1Algo3/main.cpp > CMakeFiles/tp1Algo3.dir/main.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/main.cpp" > CMakeFiles/tp1Algo3.dir/main.cpp.i
 
 CMakeFiles/tp1Algo3.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tp1Algo3.dir/main.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/santi/Desktop/tp1Algo3/main.cpp -o CMakeFiles/tp1Algo3.dir/main.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/main.cpp" -o CMakeFiles/tp1Algo3.dir/main.cpp.s
 
 CMakeFiles/tp1Algo3.dir/brute_force.cpp.o: CMakeFiles/tp1Algo3.dir/flags.make
 CMakeFiles/tp1Algo3.dir/brute_force.cpp.o: ../brute_force.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/santi/Desktop/tp1Algo3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tp1Algo3.dir/brute_force.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tp1Algo3.dir/brute_force.cpp.o -c /cygdrive/c/Users/santi/Desktop/tp1Algo3/brute_force.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tp1Algo3.dir/brute_force.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tp1Algo3.dir/brute_force.cpp.o -c "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/brute_force.cpp"
 
 CMakeFiles/tp1Algo3.dir/brute_force.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tp1Algo3.dir/brute_force.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/santi/Desktop/tp1Algo3/brute_force.cpp > CMakeFiles/tp1Algo3.dir/brute_force.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/brute_force.cpp" > CMakeFiles/tp1Algo3.dir/brute_force.cpp.i
 
 CMakeFiles/tp1Algo3.dir/brute_force.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tp1Algo3.dir/brute_force.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/santi/Desktop/tp1Algo3/brute_force.cpp -o CMakeFiles/tp1Algo3.dir/brute_force.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/brute_force.cpp" -o CMakeFiles/tp1Algo3.dir/brute_force.cpp.s
 
 # Object files for target tp1Algo3
 tp1Algo3_OBJECTS = \
@@ -115,7 +115,7 @@ tp1Algo3.exe: CMakeFiles/tp1Algo3.dir/main.cpp.o
 tp1Algo3.exe: CMakeFiles/tp1Algo3.dir/brute_force.cpp.o
 tp1Algo3.exe: CMakeFiles/tp1Algo3.dir/build.make
 tp1Algo3.exe: CMakeFiles/tp1Algo3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/santi/Desktop/tp1Algo3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tp1Algo3.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tp1Algo3.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tp1Algo3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +128,6 @@ CMakeFiles/tp1Algo3.dir/clean:
 .PHONY : CMakeFiles/tp1Algo3.dir/clean
 
 CMakeFiles/tp1Algo3.dir/depend:
-	cd /cygdrive/c/Users/santi/Desktop/tp1Algo3/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/santi/Desktop/tp1Algo3 /cygdrive/c/Users/santi/Desktop/tp1Algo3 /cygdrive/c/Users/santi/Desktop/tp1Algo3/cmake-build-debug /cygdrive/c/Users/santi/Desktop/tp1Algo3/cmake-build-debug /cygdrive/c/Users/santi/Desktop/tp1Algo3/cmake-build-debug/CMakeFiles/tp1Algo3.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src" "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src" "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/cmake-build-debug" "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/cmake-build-debug" "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/cmake-build-debug/CMakeFiles/tp1Algo3.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/tp1Algo3.dir/depend
 

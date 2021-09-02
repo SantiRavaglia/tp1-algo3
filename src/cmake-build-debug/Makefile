@@ -68,10 +68,10 @@ RM = /cygdrive/c/Users/santi/AppData/Local/JetBrains/CLion2020.3/cygwin_cmake/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/santi/Desktop/tp1Algo3
+CMAKE_SOURCE_DIR = "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/santi/Desktop/tp1Algo3/cmake-build-debug
+CMAKE_BINARY_DIR = "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/santi/Desktop/tp1Algo3/cmake-build-debug/CMakeFiles /cygdrive/c/Users/santi/Desktop/tp1Algo3/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/cmake-build-debug/CMakeFiles" "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/santi/Desktop/tp1Algo3/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
