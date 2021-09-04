@@ -1,3 +1,4 @@
+int M = 45;
 #include <iostream>
 #include <vector>
 #include "brute_force.h"
@@ -5,20 +6,6 @@
 #include <algorithm>
 
 using namespace std;
-
-int mejorBeneficio = 0;
-
-int BTRec(vector<pair<int, pair<int, int>>> locales, int M, int n, int index, int sumBeneficio, int sumContagio) {
-    if(index == n) {
-        if (sumContagio > M) sumBeneficio = -1;
-        return (sumBeneficio > mejorBeneficio) ? sumBeneficio : mejorBeneficio;
-    }
-
-    int noAgrego =  BTRec(locales, M, n, index+1,sumBeneficio, sumContagio);
-    int agrego = BTRec(locales, M, n, index+1, sumBeneficio+locales[index].second.first, sumContagio+locales[index].second.second);
-
-    return max(noAgrego, agrego);
-}
 
 int main() {
     pair<int, pair<int, int>> p1;
@@ -54,8 +41,7 @@ int main() {
     testV.push_back(p5);
 
     int resBF = calculoBeneficioBF(testV, 45);
-    //int resBT = calculoBeneficioBT(testV, 45);
-    int resBT = BTRec(testV, 45, testV.size(), 0, 0, 0);
+    int resBT = calculoBeneficioBT(testV, 45);
 
     cout << resBT << endl;
 
