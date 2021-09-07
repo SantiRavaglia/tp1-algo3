@@ -1,25 +1,53 @@
 #include "backtracking.h"
+#include <iostream>
 #include <algorithm>
 #include <vector>
 #include <cmath>
 
-// int mejorBeneficio = 0;
+using namespace std;
+int M = 45;
 
-int BTRec(vector<pair<int, pair<int, int>>> locales, int index, int sumBeneficio, int sumContagio, int currentIdx, int M) {
-    if(index == locales.size() || sumContagio > M) { //confio en la logica de cortocircuito de || en cpp
+int calculoBeneficioBT(vector<int>& b, vector<int>& c, int index, int bSum, int cSum) {
+    if (index >= b.size()) {
+        return bSum;
+    }
+
+    if (cSum + c[index] > M) { // poda por factibilidad, porque se que no existe una solucion factible a partir de este punto
         return 0;
     }
-    
-    if (abs(currentIdx - locales[index].first) != 1) {
-        currentIdx = locales[index].first;
-    }
-    int noAgrego =  BTRec(locales, index+1, sumBeneficio, sumContagio, currentIdx, M);
-    int agrego = BTRec(locales, index+1, sumBeneficio+locales[index].second.first, sumContagio+locales[index].second.second, currentIdx, M);
 
-    return max(noAgrego, agrego);
+    // hila fino en si es poda o no
+    int skipCurrent = calculoBeneficioBT(b, c, index+1, bSum, cSum);
+    int countCurrent = calculoBeneficioBT(b, c, index+2, bSum+b[index], cSum+c[index]);
+
+    return skipCurrent > countCurrent ? skipCurrent : countCurrent;
 }
 
-int calculoBeneficioBT(vector<pair<int, pair<int, int>>> locales, int M) {
-    int currentIdx = 0;
-    return BTRec(locales, 0, 0, 0, currentIdx, M);
-}
+// int calculoBeneficioBT(vector<int>& b, vector<int>& c, int index, int bSum, int cSum, int prevIdx) {
+//     // cout << bSum << endl;
+//     if (index >= b.size()) {
+//         return bSum;
+//     }
+
+//     if (cSum + c[index] > M) { // poda por factibilidad, porque se que no existe una solucion factible a partir de este punto
+//         return 0;
+//     }
+
+//     int skipCurrent, countCurrent;
+//     if (index == 0) {
+//         skipCurrent = calculoBeneficioBT(b, c, index+1, bSum, cSum, prevIdx);
+//         countCurrent = calculoBeneficioBT(b, c, index+2, bSum+b[index], cSum+c[index], prevIdx);
+//     } else if (index == 1) {        
+//         skipCurrent = calculoBeneficioBT(b, c, index+1, bSum, cSum, prevIdx);
+//         countCurrent = calculoBeneficioBT(b, c, index+1, bSum+b[index], cSum+c[index], index);
+//     } else {
+//         if (index - prevIdx == 1) {
+//             cout << bSum << endl;
+//             return 0;
+//         }
+//         skipCurrent = calculoBeneficioBT(b, c, index+1, bSum, cSum, prevIdx);
+//         countCurrent = calculoBeneficioBT(b, c, index+1, bSum+b[index], cSum+c[index], index);
+//     }
+
+//     return skipCurrent > countCurrent ? skipCurrent : countCurrent;
+// }
