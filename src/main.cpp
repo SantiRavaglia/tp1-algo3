@@ -1,8 +1,7 @@
-int M = 45;
 #include <iostream>
 #include <vector>
 #include "brute_force.h"
-#include "backtracking.h"
+// #include "backtracking.h"
 #include <algorithm>
 
 using namespace std;
@@ -40,10 +39,10 @@ int main() {
     testV.push_back(p4);
     testV.push_back(p5);
 
-    int resBF = calculoBeneficioBF(testV, 45);
-    int resBT = calculoBeneficioBT(testV, 45);
+    int resBF = calculoBeneficioBF(testV);
+    // int resBT = calculoBeneficioBT(testV, 45);
 
-    cout << resBT << endl;
+    cout << resBF << endl;
 
     return 0;
 }

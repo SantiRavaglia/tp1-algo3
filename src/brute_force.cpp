@@ -28,4 +28,3 @@ int calculoBeneficioBF(vector<pair<int, pair<int, int>>> locales, int M) {
 	vector<int> vecIndex;
     return BFRec(locales, M, 0, 0, 0, vecIndex);
 }
-
