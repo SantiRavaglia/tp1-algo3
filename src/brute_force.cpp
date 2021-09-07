@@ -16,7 +16,7 @@ int BFRec(vector<pair<int, pair<int, int>>> locales, int M, int index, int sumBe
             } else {
                 return (sumBeneficio > mejorBeneficioBF) ? sumBeneficio : mejorBeneficioBF;
             }
-        }  
+        }
     }
 
     int noAgrego =  BFRec(locales, M, index+1, sumBeneficio, sumContagio, vecIndex);
