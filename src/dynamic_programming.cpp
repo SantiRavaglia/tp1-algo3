@@ -1,39 +1,40 @@
 #include "dynamic_programming.h"
+#include <iostream>
 #include <algorithm>
 #include <vector>
 #include <cmath>
 int M = 45;
-// [20, 50, 10, 15 25]
-// [10, 25, 40, 15, 20]
-// [, 75, 35, 25, 25]
-int calculoBeneficioDPMemo(vector<int>& memo, vector<int>& b, vector<int>& c, int index, int bSum, int cSum) {
-    if (index >= b.size()) {
-        return bSum;
+
+int calculoBeneficioDPMemo(vector<vector<vector<int>>>& memo, vector<int>& b, vector<int>& c, int index, int k, int prevTaken) {
+	cout << "i=" << index << " k=" << k << endl;
+    if (k < 0) return -1;
+    if (memo[index][k][prevTaken] == -2) { //significa que esta posición está indefinida
+
+        if (index == 0) {
+            memo[index][k][prevTaken] = prevTaken == 1 && c[index] <= k ? b[index] : 0;
+        }
+        else if (prevTaken) {
+
+            int skipCurrent = calculoBeneficioDPMemo(memo, b, c, index - 1, k, 1);
+            int countCurrent = calculoBeneficioDPMemo(memo, b, c, index - 1, k - c[index], 0);
+            if (countCurrent != -1)
+                countCurrent += b[index];
+
+            memo[index][k][prevTaken] = skipCurrent > countCurrent ? skipCurrent : countCurrent;
+        }
+        else {
+            memo[index][k][prevTaken] = calculoBeneficioDPMemo(memo, b, c, index - 1, k, 1);
+        }
     }
 
-    if (cSum + c[index] > M) { // poda por factibilidad, porque se que no existe una solucion factible a partir de este punto
-        return 0;
-    }
-
-	int skipCurrent, countCurrent;
-	if (index+1 < memo.size() && memo[index+1] != -1) {
-		skipCurrent = memo[index+1];
-	} else {
-		skipCurrent = calculoBeneficioDPMemo(memo, b, c, index+1, bSum, cSum);
-		memo[index+1] = skipCurrent;
-	}
-
-	if (memo[index] != -1) {
-		countCurrent = memo[index];
-	} else {
-		countCurrent = calculoBeneficioDPMemo(memo, b, c, index+2, bSum+b[index], cSum+c[index]);
-		memo[index] = countCurrent;
-	}
-
-    return skipCurrent > countCurrent ? skipCurrent : countCurrent;
+    return memo[index][k][prevTaken];
 }
 
 int calculoBeneficioDP(vector<int>& b, vector<int>& c) {
-	vector<int> memo(b.size(), -1);
-	return calculoBeneficioDPMemo(memo, b, c, 0, 0, 0);
+	vector<int> undefinedPair;
+	undefinedPair.push_back(-2);
+	undefinedPair.push_back(-2);
+	vector<vector<int>> rows(M, undefinedPair);
+	vector<vector<vector<int>>> memo(b.size(), rows);
+	return calculoBeneficioDPMemo(memo, b, c, b.size() - 1, M - 1, 0);
 }

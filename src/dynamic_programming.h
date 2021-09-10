@@ -2,5 +2,5 @@
 
 using namespace std;
 
-int calculoBeneficioDPMemo(vector<int>& memo, vector<int>& b, vector<int>& c, int index, int bSum, int cSum);
+int calculoBeneficioDPMemo(vector<vector<vector<int>>>& memo, vector<int>& b, vector<int>& c, int i, int k, int prevTaken);
 int calculoBeneficioDP(vector<int>& b, vector<int>& c);
