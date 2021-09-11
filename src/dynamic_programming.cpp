@@ -6,7 +6,6 @@
 int M = 45;
 
 int calculoBeneficioDPMemo(vector<vector<vector<int>>>& memo, vector<int>& b, vector<int>& c, int index, int k, int prevTaken) {
-	cout << "i=" << index << " k=" << k << endl;
     if (k < 0) return -1; // suma de contagios supera limite M
     if (memo[index][k][prevTaken] == -2) { // calculo buscado indefinido en la estructura de memoizacion
         if (index == 0) {
