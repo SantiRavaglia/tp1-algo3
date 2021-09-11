@@ -31,7 +31,8 @@ int main() {
     //     cotaOptB2 += !s ? b[i] : 0;
     //     s = !s;
     // }
-    // int resBT = calculoBeneficioBT(b, c, 0, 0, 0);
+    // int cotaOptB = max(cotaOptB1, cotaOptB2);
+    // int resBT = calculoBeneficioBT(b, c, 0, 0, 0, cotaOptB);
     int resDP = calculoBeneficioDP(b, c);
 
     cout << resDP << endl;
