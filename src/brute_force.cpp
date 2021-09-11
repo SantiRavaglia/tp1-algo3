@@ -8,6 +8,9 @@ int M = 45;
 
 int calculoBeneficioBF(vector<int>& b, vector<int>& c, int index, int bSum, int cSum) {
     if (index >= b.size()) {
+        // si llegue al final de los llamados recursivos y la suma de contagios es mayor a limite M
+        // devuelvo el menor beneficio posible
+        // caso contrario, devuelvo la suma de beneficios proveniente de los llamados recursivos
         if (cSum > M) {
             return 0;
         }
