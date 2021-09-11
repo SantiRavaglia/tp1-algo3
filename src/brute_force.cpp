@@ -8,7 +8,7 @@ int M = 45;
 
 int calculoBeneficioBF(vector<int>& b, vector<int>& c, int index, int bSum, int cSum) {
     if (index >= b.size()) {
-        if (cSum + c[index] > M) {
+        if (cSum > M) {
             return 0;
         }
         return bSum;
