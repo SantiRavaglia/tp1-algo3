@@ -6,19 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/backtracking.h
-vector
--
-
 /cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/brute_force.cpp
 iostream
 -
 vector
 -
+cmath
+-
 brute_force.h
 /cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/brute_force.h
 
 /cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/brute_force.h
+vector
+-
+
+/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/dynamic_programming.h
 vector
 -
 
@@ -27,10 +29,8 @@ iostream
 -
 vector
 -
-brute_force.h
-/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/brute_force.h
-backtracking.h
-/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/backtracking.h
+dynamic_programming.h
+/cygdrive/c/Users/santi/Desktop/UBA/Algo 3/tp1-algo3/src/dynamic_programming.h
 algorithm
 -
 

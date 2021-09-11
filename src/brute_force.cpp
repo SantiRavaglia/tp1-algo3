@@ -4,14 +4,14 @@
 #include "brute_force.h"
 
 using namespace std;
-int M = 45;
+int M_bf = 45;
 
 int calculoBeneficioBF(vector<int>& b, vector<int>& c, int index, int bSum, int cSum) {
     if (index >= b.size()) {
         // si llegue al final de los llamados recursivos y la suma de contagios es mayor a limite M
         // devuelvo el menor beneficio posible
         // caso contrario, devuelvo la suma de beneficios proveniente de los llamados recursivos
-        if (cSum > M) {
+        if (cSum > M_bf) {
             return 0;
         }
         return bSum;

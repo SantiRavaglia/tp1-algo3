@@ -4,7 +4,6 @@
 CMakeFiles/tp1Algo3.dir/brute_force.cpp.o: ../brute_force.cpp
 CMakeFiles/tp1Algo3.dir/brute_force.cpp.o: ../brute_force.h
 
-CMakeFiles/tp1Algo3.dir/main.cpp.o: ../backtracking.h
-CMakeFiles/tp1Algo3.dir/main.cpp.o: ../brute_force.h
+CMakeFiles/tp1Algo3.dir/main.cpp.o: ../dynamic_programming.h
 CMakeFiles/tp1Algo3.dir/main.cpp.o: ../main.cpp
 

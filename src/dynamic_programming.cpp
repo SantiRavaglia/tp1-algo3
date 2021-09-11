@@ -3,7 +3,6 @@
 #include <algorithm>
 #include <vector>
 #include <cmath>
-int M = 45;
 
 int calculoBeneficioDPMemo(vector<vector<vector<int>>>& memo, vector<int>& b, vector<int>& c, int index, int k, int prevTaken) {
     if (k < 0) return -1; // suma de contagios supera limite M
@@ -30,6 +29,7 @@ int calculoBeneficioDPMemo(vector<vector<vector<int>>>& memo, vector<int>& b, ve
 }
 
 int calculoBeneficioDP(vector<int>& b, vector<int>& c) {
+    int M = 45;
 	vector<int> undefinedPair;
 	undefinedPair.push_back(-2);
 	undefinedPair.push_back(-2);
