@@ -22,6 +22,15 @@ int main() {
     c.push_back(20);
 
     // int resBF = calculoBeneficioBF(b, c, 0, 0, 0);
+    
+    // int cotaOptB1 = 0;
+    // int cotaOptB2 = 0;
+    // bool s = false;
+    // for (int i = 0; i < b.size(); i++) {
+    //     cotaOptB1 += s ? b[i] : 0;
+    //     cotaOptB2 += !s ? b[i] : 0;
+    //     s = !s;
+    // }
     // int resBT = calculoBeneficioBT(b, c, 0, 0, 0);
     int resDP = calculoBeneficioDP(b, c);
 
