@@ -17,7 +17,7 @@ int calculoBeneficioBT(vector<int>& b, vector<int>& c, int index, int bSum, int 
         return 0;
     }
     
-    if (bSum == cotaOptB) { // poda por optimalidad, no existe una solucion mejor que mejor cota de beneficios
+    if (bSum + b[index] == cotaOptB) { // poda por optimalidad, no existe una solucion mejor que mejor cota de beneficios
         return bSum;
     }
 
