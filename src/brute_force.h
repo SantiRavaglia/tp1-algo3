@@ -2,4 +2,4 @@
 
 using namespace std;
 
-int calculoBeneficioBF(vector<int>& b, vector<int>& c, int index, int bSum, int cSum);
+int calculoBeneficioBF(vector<int>& b, vector<int>& c, int M, int index, int bSum, int cSum);

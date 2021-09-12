@@ -28,8 +28,7 @@ int calculoBeneficioDPMemo(vector<vector<vector<int>>>& memo, vector<int>& b, ve
     return memo[index][k][prevTaken];
 }
 
-int calculoBeneficioDP(vector<int>& b, vector<int>& c) {
-    int M = 45;
+int calculoBeneficioDP(vector<int>& b, vector<int>& c, int M) {
 	vector<int> undefinedPair;
 	undefinedPair.push_back(-2);
 	undefinedPair.push_back(-2);
