@@ -35,5 +35,7 @@ int calculoBeneficioDP(vector<int>& b, vector<int>& c) {
 	undefinedPair.push_back(-2);
 	vector<vector<int>> rows(M, undefinedPair);
 	vector<vector<vector<int>>> memo(b.size(), rows);
-	return calculoBeneficioDPMemo(memo, b, c, b.size() - 1, M - 1, 0);
+	int countLast = calculoBeneficioDPMemo(memo, b, c, b.size() - 1, M - 1, 1);
+	int skipLast = calculoBeneficioDPMemo(memo, b, c, b.size() - 1, M - 1, 0);
+	return countLast > skipLast ? countLast : skipLast;
 }
