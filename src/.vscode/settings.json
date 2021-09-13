@@ -37,6 +37,11 @@
         "xtr1common": "cpp",
         "xutility": "cpp",
         "map": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "algorithm": "cpp",
+        "ratio": "cpp",
+        "set": "cpp",
+        "xtree": "cpp",
+        "string": "cpp"
     }
 }
