@@ -41,8 +41,8 @@ int main(int argc, char **argv) {
     int cotaOptB = max(cotaOptB1, cotaOptB2);
     if (argc < 2)
    {
-      std::cerr << "Faltan argumentos!\n";
-      return -1;
+      std::cout << "Faltan argumentos!\n";
+      return 0;
    }
    map<string, string> algoritmos_implementados = {
 		{"BF", "Fuerza Bruta"}, {"BT", "Backtracking con podas"}, {"BT-F", "Backtracking con poda por factibilidad"}, 
@@ -50,10 +50,10 @@ int main(int argc, char **argv) {
 	};
     if (algoritmos_implementados.find(argv[1]) == algoritmos_implementados.end())
 	{
-		cerr << "Algoritmo no encontrado: " << argv[1] << endl;
-		cerr << "Los algoritmos existentes son: " << endl;
-		for (auto& alg_desc: algoritmos_implementados) cerr << "\t- " << alg_desc.first << ": " << alg_desc.second << endl;
-		return -1;
+		cout << "Algoritmo no encontrado: " << argv[1] << endl;
+		cout << "Los algoritmos existentes son: " << endl;
+		for (auto& alg_desc: algoritmos_implementados) cout << "\t- " << alg_desc.first << ": " << alg_desc.second << endl;
+		return 0;
     }
 	string algoritmo = argv[1];
 
